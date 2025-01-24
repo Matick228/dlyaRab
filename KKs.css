@@ -1,0 +1,83 @@
+/* Устанавливаем box-sizing для всех элементов */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px; /* Размер текста */
+    line-height: 1.6; /* Межстрочный интервал */
+    text-align: justify; /* Выравнивание текста */
+    color: #3a6b24; /* Цвет текста */
+    background-image: url('back.jpg'); /* Путь к картинке */
+    background-size: cover; /* Масштабирование */
+    background-repeat: no-repeat; /* Убираем повторение */
+    background-attachment: fixed; /* Фиксируем фон при прокрутке */
+    background-position: center; /* Центрирование фона */
+    border: 2px solid #0a0909; /* Граница */
+    border-radius: 30px; /* Скругление границ */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    height: auto;
+    min-height: 100vh; /* Минимальная высота на всю высоту окна */
+    position: relative; /* Относительное позиционирование */
+}
+
+h1, h2 {
+    color: hsl(0, 97%, 47%);
+    font-weight: 700;
+    max-width: 100%;
+    position: relative;
+    z-index: 2; /* Поднимаем заголовки выше */
+}
+
+a {
+    color: #2c1592;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(20, 214, 20); /* Цвет ссылки при наведении */
+}
+
+p::before{
+    content: "\1F449"; 
+    /* Добавляет символ перед текстом параграфа */
+}
+
+p::after{
+    content: "\1F448";
+}
+
+ol > li::first-letter{
+    font-size: 2em; /* Увеличиваем размер */
+    font-weight: bold; /* Жирный шрифт */
+    color: #FF4500; /* Оранжевый цвет */
+}
+
+/* Установка размеров и позиционирования для изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Контейнер для списка ссылок */
+ul {
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Контейнер для списка задач */
+ol {
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
